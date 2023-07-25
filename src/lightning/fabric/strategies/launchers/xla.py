@@ -17,7 +17,7 @@ from typing import TYPE_CHECKING, Any, Callable, Optional, Union
 
 import torch.multiprocessing as mp
 
-from lightning.fabric.accelerators.xla import _using_pjrt, _XLA_AVAILABLE
+from lightning.fabric.accelerators.xla import _XLA_AVAILABLE, _using_pjrt
 from lightning.fabric.strategies.launchers.launcher import _Launcher
 from lightning.fabric.strategies.launchers.multiprocessing import _GlobalStateSnapshot
 from lightning.fabric.utilities.apply_func import move_data_to_device

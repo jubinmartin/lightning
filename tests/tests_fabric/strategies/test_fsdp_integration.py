@@ -441,8 +441,8 @@ def test_fsdp_manual_activation_checkpointing():
     fabric.launch()
 
     from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
-        apply_activation_checkpointing,
         CheckpointWrapper,
+        apply_activation_checkpointing,
     )
 
     # manually apply activation checkpointing
